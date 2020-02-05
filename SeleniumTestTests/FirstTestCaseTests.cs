@@ -22,7 +22,7 @@ namespace SeleniumTest.Tests
             File.WriteAllText(@"c:\ip.txt", "Hello");
 
             WebClient Client = new WebClient();
-            string URL = Client.DownloadString("https://s3-us-west-2.amazonaws.com/dotnetdata/elb-dns.txt");
+            string URL = Client.DownloadString("https://labassets.s3-us-west-2.amazonaws.com/Dependencies/JenkinsWindows/AppUrl.txt");
 
 
             File.WriteAllText(@"c:\ip1.txt", URL.ToString());
